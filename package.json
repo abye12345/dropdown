@@ -1,0 +1,27 @@
+{
+  "name": "dropdown",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "build": "copyfiles -u 1 src/* dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abye12345/dropdown.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/abye12345/dropdown/issues"
+  },
+  "homepage": "https://github.com/abye12345/dropdown#readme",
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}
