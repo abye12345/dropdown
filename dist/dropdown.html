@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0" />
+    <link rel="stylesheet" href="dropdown.css" />
+    <link rel="icon" href="dropdown.png" />
+    <title>dropdown</title>
+  </head>
+
+  <body>
+    <h1>Navigation Mega Dropdown(+ Custom Animation)</h1>
+    <div class="drop">
+      <ul>
+        <li><a href="#">A&B.shop</a></li>
+        <li>
+          <a id="demo1" href="#">Home</a>
+        </li>
+        <li><a id="demo3" href="#">Dropdown</a></li>
+        <li><a id="demo5" href="#">Company</a></li>
+        <li><a id="demo7" href="#">Service</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">contact</a></li>
+      </ul>
+    </div>
+    <div id="demo2" class="one">
+      <h3>Navigation Dropdown</h3>
+      <h4>Mega Menu</h4>
+      <p>
+        This dropdown navigation is not yet responsive. Its made to work on
+        desktop devices. <a href="#">Check out </a>the<br />
+        Tutorial here (German) and please give me feedback in the comments!<br />
+        Clone this project and use the navigation in your projects if you like.
+      </p>
+    </div>
+
+    <div class="one" id="demo4">
+      <h3>Looking for web design service specialiest</h3>
+
+      <li>Achive Your brand version</li>
+      <li>drive customer Engagement</li>
+    </div>
+
+    <div class="one" id="demo6">
+      <h2>Current and accurate company information</h2>
+      <p>
+        As the official supplier to the Institute of Company Auditors (the
+        IBR-IRE Instituut van de<br />
+        Bedrijfsrevisoren) and the Institue for Tax Advisors & Accountants<br />
+        (ITAA), we provide the most recent and accurate company information
+        available on the market.
+      </p>
+    </div>
+
+    <div id="demo8" class="one">
+      <img src="abi.jpg" width="100px" height="100px" />
+    </div>
+
+    <script>
+      //home
+      let homelink = document.getElementById("demo1");
+      let dropdown = document.getElementById("demo2");
+      homelink.addEventListener("mouseenter", () => {
+        demo2.style.display = "block";
+      });
+
+      homelink.addEventListener("mouseleave", () => {
+        setTimeout(() => {
+          if (!dropdown.matches(":hover")) {
+            dropdown.style.display = "none";
+          }
+        }, 100);
+      });
+      dropdown.addEventListener("mouseenter", () => {
+        dropdown.style.display = "block";
+      });
+
+      dropdown.addEventListener("mouseleave", () => {
+        dropdown.style.display = "none";
+      });
+      //dropdown
+      let x = document.getElementById("demo3");
+      let y = document.getElementById("demo4");
+      x.addEventListener("mouseenter", () => {
+        demo4.style.display = "block";
+      });
+
+      x.addEventListener("mouseleave", () => {
+        setTimeout(() => {
+          if (!y.matches(":hover")) {
+            y.style.display = "none";
+          }
+        }, 100);
+      });
+      y.addEventListener("mouseenter", () => {
+        y.style.display = "block";
+      });
+
+      y.addEventListener("mouseleave", () => {
+        y.style.display = "none";
+      });
+      //company
+      let a = document.getElementById("demo5");
+      let b = document.getElementById("demo6");
+      a.addEventListener("mouseenter", () => {
+        demo6.style.display = "block";
+      });
+
+      a.addEventListener("mouseleave", () => {
+        setTimeout(() => {
+          if (!b.matches(":hover")) {
+            b.style.display = "none";
+          }
+        }, 100);
+      });
+      b.addEventListener("mouseenter", () => {
+        b.style.display = "block";
+      });
+
+      b.addEventListener("mouseleave", () => {
+        b.style.display = "none";
+      });
+    </script>
+  </body>
+</html>
